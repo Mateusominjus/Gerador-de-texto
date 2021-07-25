@@ -22,7 +22,7 @@ pasta="Paginas/Objeto"
 copila_babel "objeto.jsx"
 
 
-
+ cp App/index.html saida/index.html
 
 #fazendo cópias
 pasta="Barra_superior/estilo"
