@@ -1,0 +1,9 @@
+#barra{
+    height: 10vh;
+    background-color: blue;
+    position: relative;
+}
+#logo{
+    width: 20%;
+    height: 100%;
+}

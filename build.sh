@@ -3,7 +3,13 @@
 
 
 copila_babel(){
-   babel --presets react $caminho_de_entrada/$1 --out-file $caminho_de_saida/$2
+   local arquivo=$1
+   local estencao=$2 
+   local saida=$2
+   if [[ "$estencao" == "jsx" ]];then 
+     saida=js
+   fi 
+   babel --presets react $caminho_de_entrada/$arquivo.$estencao --out-file $caminho_de_saida/$arquivo.$saida
 }
 
 
@@ -11,13 +17,18 @@ copila_babel(){
 #babel --presets react Barra_superior/barra.jsx --out-file saida/scripts/index.js
 
 #definindo caminhos de entrada e saida
-caminho_de_entrada=Barra_superior
+caminho_de_entrada=barra_superior
 caminho_de_saida=saida/scripts
 
-#defini arquivos
+#copilando
+copila_babel barra jsx
+copila_babel usuario jsx
 
-copila_babel  barra.jsx barra.js
 
+
+#copiando arquivos 
+#css
+cp Barra_superior/estilo/barra.css  saida/estilo/barra.css
 
 
 

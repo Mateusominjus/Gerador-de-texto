@@ -1,16 +1,11 @@
-barra => {
-  return React.createElement(
-    "div",
-    { "class": "row" },
-    React.createElement(
-      "div",
-      { "class": "col-8" },
-      "col-8"
-    ),
-    React.createElement(
-      "div",
-      { "class": "col-4" },
-      "col-4"
-    )
-  );
-};
+class Barra extends React.Component {
+   render() {
+      return React.createElement(
+         "nav",
+         { id: "barra" },
+         React.createElement("img", { src: "../imagens/logo.svg", alt: "logo-ominjus", id: "logo" }),
+         React.createElement(Usuario, { usuario: this.props.usuario })
+      );
+   }
+
+}
