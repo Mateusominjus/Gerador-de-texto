@@ -25,14 +25,19 @@ copila_babel  "usuario.jsx"
 pasta="Paginas/Home"
 copila_babel "home.jsx"
 
+pasta="Pesquisa/"
+copila_babel "pesquisa.jsx"
 
  cp App/index.html saida/index.html
 
 #fazendo cópias
-pasta="Barra_superior"
 tipo="estilo"
+pasta="Barra_superior"
 copia_arquivo "barra.css"
 
+
+pasta="Pesquisa"
+copia_arquivo "pesquisa.css"
 
 
 
