@@ -1,13 +1,10 @@
 main = ()=>
     ReactDOM.render( 
-        <Barra usuario="Jurandi"> </Barra>
-    ,$("head").get(0))
+    <div>
+    <Barra usuario="Jurandi"> </Barra>
+    <Objeto></Objeto>
+    </div>,
+    $("body").get(0)
+    )
 
-    ReactDOM.render( 
-        <Objeto></Objeto>
-    ,$("body").get(0))
-    
-
-
-
-    
+main()

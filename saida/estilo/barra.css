@@ -7,8 +7,9 @@
     width: 20%;
     height: 100%;
 }
-.dropdown-menu {
-    z-index: 1;
-    position:absolute;
-    display: none;
+#usuario{
+    top: 2vh;
+    right: 2vw;
+    position: absolute;
+
 }

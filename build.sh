@@ -13,6 +13,10 @@ copia_arquivo(){
 #definindo caminhos de entrada e saida
 tipo="scripts"
 
+pasta="Paginas/"
+copila_babel "main.jsx"
+
+
 pasta="Barra_superior"
 copila_babel  "barra.jsx"
 copila_babel  "usuario.jsx"
@@ -25,7 +29,7 @@ copila_babel "objeto.jsx"
  cp App/index.html saida/index.html
 
 #fazendo cópias
-pasta="Barra_superior/estilo"
+pasta="Barra_superior"
 tipo="estilo"
 copia_arquivo "barra.css"
 

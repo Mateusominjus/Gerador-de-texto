@@ -1,15 +1,15 @@
 
 class Usuario extends React.Component {
     render() {
-        return <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Botão dropdown
+        return<div class="dropdown" id="usuario">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+         {this.props.usuario}
         </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">Alguma ação</a>
-          <a class="dropdown-item" href="#">Outra ação</a>
-          <a class="dropdown-item" href="#">Alguma coisa aqui</a>
-        </div>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+          <li><button class="dropdown-item" type="button">Sair</button></li>
+          <li><button class="dropdown-item" type="button">Voltar a plataforma</button></li>
+
+        </ul>
       </div>
     }
 }
