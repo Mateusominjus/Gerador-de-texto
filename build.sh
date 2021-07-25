@@ -1,34 +1,40 @@
 
-
-
-
 copila_babel(){
    local arquivo=$1
-   local estencao=$2 
-   local saida=$2
-   if [[ "$estencao" == "jsx" ]];then 
-     saida=js
-   fi 
-   babel --presets react $caminho_de_entrada/$arquivo.$estencao --out-file $caminho_de_saida/$arquivo.$saida
+   local saida=${arquivo//jsx/js}
+   babel --presets react App/$caminho_de_entrada/$arquivo --out-file saida/$tipo/$saida
 }
 
-
-
-#babel --presets react Barra_superior/barra.jsx --out-file saida/scripts/index.js
+copia_arquivo(){
+    local arquivo=$1
+    cp App/$caminho_de_entrada/$arquivo  saida/$tipo/$arquivo 
+}
 
 #definindo caminhos de entrada e saida
-caminho_de_entrada=barra_superior
-caminho_de_saida=saida/scripts
-
-#copilando
-copila_babel barra jsx
-copila_babel usuario jsx
+caminho_de_entrada="Barra_superior"
+tipo="scripts"
+copila_babel  "barra.jsx"
+copila_babel  "usuario.jsx"
 
 
 
-#copiando arquivos 
-#css
-cp Barra_superior/estilo/barra.css  saida/estilo/barra.css
+caminho_de_entrada="Paginas/Objeto"
+tipo="htmls"
+copila_babel "objeto.html"
+
+
+
+#fazendo cópias
+caminho_de_entrada="Barra_superior/estilo"
+tipo="estilo"
+copia_arquivo "barra.css"
+
+
+
+
+
+
+
 
 
 
