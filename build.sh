@@ -15,7 +15,8 @@ caminho_de_entrada=Barra_superior
 caminho_de_saida=saida/scripts
 
 #defini arquivos
-copila_babel  barra.jsx index.js
+
+copila_babel  barra.jsx barra.js
 
 
 
