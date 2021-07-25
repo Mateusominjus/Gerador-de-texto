@@ -3,24 +3,29 @@ class Usuario extends React.Component {
   render() {
     return React.createElement(
       "div",
-      { "class": "btn-group" },
+      { "class": "dropdown" },
       React.createElement(
         "button",
-        { type: "button", "class": "btn btn-secondary dropdown-toggle", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false" },
-        this.props.usuario
+        { "class": "btn btn-secondary dropdown-toggle", type: "button", id: "dropdownMenuButton", "data-toggle": "dropdown", "aria-haspopup": "true", "aria-expanded": "false" },
+        "Bot\xE3o dropdown"
       ),
       React.createElement(
         "div",
-        { "class": "dropdown-menu dropdown-menu-right" },
+        { "class": "dropdown-menu", "aria-labelledby": "dropdownMenuButton" },
         React.createElement(
-          "button",
-          { "class": "dropdown-item", type: "button" },
-          "Sair"
+          "a",
+          { "class": "dropdown-item", href: "#" },
+          "Alguma a\xE7\xE3o"
         ),
         React.createElement(
-          "button",
-          { "class": "dropdown-item", type: "button" },
-          "Voltar a Plataforma"
+          "a",
+          { "class": "dropdown-item", href: "#" },
+          "Outra a\xE7\xE3o"
+        ),
+        React.createElement(
+          "a",
+          { "class": "dropdown-item", href: "#" },
+          "Alguma coisa aqui"
         )
       )
     );
