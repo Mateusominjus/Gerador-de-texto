@@ -7,7 +7,7 @@ class Barra extends React.Component {
       </nav>   
    }
    adicionar_paginas(paginas){
-      
+      const adicionar_pag
    }
 
 }

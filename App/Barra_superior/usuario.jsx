@@ -1,7 +1,7 @@
 
 class Usuario extends React.Component {
     render() {
-        return<div class="dropdown" id="usuario">
+        return<div class="dropdown" s>
         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
          {this.props.usuario}
         </button>
