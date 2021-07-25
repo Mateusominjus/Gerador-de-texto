@@ -1,5 +1,3 @@
-class Objeto extends React.Component {
-    render(){
-        return <h1> Página H1</h1>
-    }
+objeto = () => {
+    definir_paginas()
 }

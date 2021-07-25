@@ -1,15 +1,10 @@
-#barra{
-    height: 10vh;
-    background-color: blue;
-    position: relative;
-}
-#logo{
-    width: 20%;
-    height: 100%;
-}
-#usuario{
-    top: 2vh;
-    right: 2vw;
-    position: absolute;
 
+#barra{
+    background-color: rgb(218, 218, 218);
+    
+}
+
+h4{ 
+    padding-top: 10px;
+ 
 }
