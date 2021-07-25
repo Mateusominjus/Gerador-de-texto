@@ -1,3 +1,0 @@
-objeto = () => {
-    definir_paginas()
-}

@@ -15,14 +15,13 @@ barra = (usuario) =>{
 definir_paginas =(paginas) =>{
    const id = "#meio-da-barra"
    const elem = <div class="row">
-
-                     {paginas.map(pagina=> (
-                      <h4 class="col-2" onClick={pagina.lambda} >{pagina.nome}</h4>
+                    {paginas.map(pagina=> (
+                      <div class="col-2 elementos_da_barra" onClick={pagina.lambda} id={pagina.id} >{pagina.nome}</div>
                      ))}
-                   
                </div>
- $(id).ready(()=>{
-   ReactDOM.render(elem, $(id).get(0))
- })
-
+  
+   $(id).ready(()=>{
+      ReactDOM.render(elem, $(id).get(0))
+   })
+   
 }

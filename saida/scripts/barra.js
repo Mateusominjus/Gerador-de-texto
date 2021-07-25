@@ -20,12 +20,13 @@ definir_paginas = paginas => {
    const elem = React.createElement(
       "div",
       { "class": "row" },
-      React.createElement(
-         "h4",
-         { "class": "col-2" },
-         "teste"
-      )
+      paginas.map(pagina => React.createElement(
+         "div",
+         { "class": "col-2 elementos_da_barra", onClick: pagina.lambda, id: pagina.id },
+         pagina.nome
+      ))
    );
+
    $(id).ready(() => {
       ReactDOM.render(elem, $(id).get(0));
    });

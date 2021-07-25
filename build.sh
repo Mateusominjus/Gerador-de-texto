@@ -22,8 +22,8 @@ copila_babel  "barra.jsx"
 copila_babel  "usuario.jsx"
 
 
-pasta="Paginas/Objeto"
-copila_babel "objeto.jsx"
+pasta="Paginas/Home"
+copila_babel "home.jsx"
 
 
  cp App/index.html saida/index.html

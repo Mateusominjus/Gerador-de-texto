@@ -2,6 +2,6 @@
 
 main = ()=>
    barra("jurandi")
-   objeto()
+   home()
 main()
 

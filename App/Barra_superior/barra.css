@@ -1,10 +1,15 @@
 
 #barra{
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(247, 247, 247);
     
 }
-
-h4{ 
-    padding-top: 10px;
- 
+.elementos_da_barra{
+    color: rgb(155, 155, 155); 
+    padding-top: 5px;
+    font-size: 20px;
+    font-style:initial;
+    text-align: center;
+}
+.elementos_da_barra:hover ,#atual{
+    color: rgb(255, 147, 46); 
 }
