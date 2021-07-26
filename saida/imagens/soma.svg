@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="3.9370079in"
+   height="3.9370079in"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="soma.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     width="20mm"
+     units="in"
+     showguides="false"
+     inkscape:guide-bbox="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="1.8101934"
+     inkscape:cx="206.05534"
+     inkscape:cy="114.07621"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="-0.86547851,-52.16689"
+       orientation="1,0"
+       id="guide239" />
+    <sodipodi:guide
+       position="49.208328,61.159229"
+       orientation="1,0"
+       id="guide241" />
+    <sodipodi:guide
+       position="64.701606,99.746269"
+       orientation="0,-1"
+       id="guide265" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-50.474854,-100.0141)">
+    <circle
+       style="fill:#4d4d4d;stroke-width:0.675116"
+       id="path31"
+       cx="100.47485"
+       cy="150.0141"
+       r="50" />
+    <rect
+       style="fill:#ffffff;stroke-width:0.302788"
+       id="rect135"
+       width="16.324759"
+       height="71.595856"
+       x="92.912315"
+       y="116.65099" />
+    <rect
+       style="fill:#ffffff;stroke-width:0.302788"
+       id="rect135-3"
+       width="16.324759"
+       height="71.595856"
+       x="141.6113"
+       y="-138.43373"
+       transform="rotate(90.751511)" />
+  </g>
+</svg>

@@ -1,6 +1,10 @@
-.pesquisa{
-    width: 300px;
-    margin-top: 30px;
+.Pesquisa{
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    
+}
+.Input{
+    border-radius: 2px;
 }

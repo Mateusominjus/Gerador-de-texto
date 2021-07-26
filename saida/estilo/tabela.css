@@ -1,18 +1,41 @@
 .Tabela{
     width: 800px;
-    height: 500px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    margin-top: 100px;
+
 }
 
 .Cabecalho{
   
    color: rgb(77, 77, 77);
    font-size: 20px;
+   margin-bottom: 20px;
    font-weight: 500;
    font-style: inherit;
-   text-align: center;
+   text-align: left;
+}
+
+.Linha_da_tabela{
+   margin-top: 1px;
+   background-color: rgb(238, 238, 238);
+   margin-left: auto;
+   margin-right: auto;
+}
+.Linha_da_tabela :hover{
+    background-color: rgb(112, 112, 112);
+ }
+
+ .Linha{
+    margin-left: 1px;
+     text-align: left;
+     font-size: 20px;
+ }
+
+#linhas{
+   width: 800px;
+   height: 300px;
+   overflow-y: scroll;
+   overflow-x: hidden;
 }

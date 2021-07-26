@@ -1,11 +1,13 @@
 
 class Linha extends React.Component{
     render(){
-        return <div className="row">
-                  {this.props.linha.map(texto=> (
-                       <div className="col linha">{texto}</div>
-                 ))}  
-               </div>
+        return <div className="Linha_da_tabela">
+                    <div className="row">
+                    {this.props.linha.map(texto=> (
+                        <div className="col Linha">{texto}</div>
+                    ))}  
+                   </div>
+              </div>
     }
 }
 
@@ -15,6 +17,6 @@ function definir_linhas(matriz){
                      <Linha linha={linha}></Linha>
                  ))} 
         </React.Fragment>
-        ReactDOM.render( linha, $("#linhas").get(0)) 
+        ReactDOM.render( linhas, $("#linhas").get(0)) 
 }
    
