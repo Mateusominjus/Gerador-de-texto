@@ -26,14 +26,11 @@ copila_babel "header.jsx"
 copila_babel "tabela.jsx"
 
 
-pasta="Paginas/Home"
-copila_babel "home.jsx"
-
 pasta="Pesquisa/"
 copila_babel "pesquisa.jsx"
 
  cp App/index.html saida/index.html
- cp App/import.js  saida/import.js
+ cp App/importe.js  saida/scripts/importe.js
 #fazendo cópias
 tipo="estilo"
 pasta="Barra_superior"

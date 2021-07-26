@@ -1,5 +1,16 @@
 
-importe("scripts/barra.js");
-main = () => barra("jurandi");
-home();
+
+main = () => {
+   gerar_barra("junrandi");
+
+   definir_paginas([{ nome: "Home" }]);
+   const elemento = React.createElement(
+      React.Fragment,
+      null,
+      React.createElement(Pesquisa, { texto: "Objeto" })
+   );
+
+   ReactDOM.render(elemento, $("#root").get(0));
+};
+
 main();

@@ -1,6 +1,6 @@
 
-barra = (usuario) =>{
-   const barra = <React.Fragment>
+gerar_barra = (usuario) =>{
+   const elem_barra= <React.Fragment>
                      <img  class="col-2" src="imagens/logo.svg" alt="logo-ominjus" id="logo"></img>
                      <div class="col-9" id="meio-da-barra"></div>
                      <div class="col-1">
@@ -8,7 +8,7 @@ barra = (usuario) =>{
                      </div>                    
                 </React.Fragment>
 
-    ReactDOM.render( barra, $("#barra").get(0))
+    ReactDOM.render( elem_barra, $("#barra").get(0))
 }
 
 

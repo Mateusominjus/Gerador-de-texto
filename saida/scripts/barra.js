@@ -1,6 +1,6 @@
 
-barra = usuario => {
-   const barra = React.createElement(
+gerar_barra = usuario => {
+   const elem_barra = React.createElement(
       React.Fragment,
       null,
       React.createElement("img", { "class": "col-2", src: "imagens/logo.svg", alt: "logo-ominjus", id: "logo" }),
@@ -12,7 +12,7 @@ barra = usuario => {
       )
    );
 
-   ReactDOM.render(barra, $("#barra").get(0));
+   ReactDOM.render(elem_barra, $("#barra").get(0));
 };
 
 definir_paginas = paginas => {

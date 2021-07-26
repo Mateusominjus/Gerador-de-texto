@@ -13,3 +13,7 @@
 .elementos_da_barra:hover ,#atual{
     color: rgb(255, 147, 46); 
 }
+#usuario{
+    margin-left: -20px;
+  
+}
