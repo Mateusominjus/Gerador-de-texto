@@ -1,6 +1,6 @@
 
 #barra{
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(182, 182, 182);
     
 }
 .elementos_da_barra{
@@ -11,7 +11,7 @@
     text-align: center;
 }
 .elementos_da_barra:hover ,.atual{
-    color: rgb(255, 147, 46); 
+    color: rgb(250, 123, 3); 
 }
 #usuario{
     margin-left: -20px;

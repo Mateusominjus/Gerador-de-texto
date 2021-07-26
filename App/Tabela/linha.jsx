@@ -2,7 +2,9 @@
 class Linha extends React.Component{
     render(){
         return <div className="Linha_da_tabela">
-                    <div className="row">
+                    <div className="row" onClick={()=>{
+                            cria_objeto(this.props.linha[0])
+                     }}>
                     {this.props.linha.map(texto=> (
                         <div className="col Linha">{texto}</div>
                     ))}  
@@ -17,6 +19,7 @@ function definir_linhas(matriz){
                      <Linha linha={linha}></Linha>
                  ))} 
         </React.Fragment>
+        
         ReactDOM.render( linhas, $("#linhas").get(0)) 
 }
    

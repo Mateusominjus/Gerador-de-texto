@@ -4,7 +4,7 @@
 
 
 function main(){
-   gerar_barra("junrandi")
+   gerar_barra(usuario)
 
    definir_paginas([{nome:"Home", classe:"atual"}])
    const elemento = <React.Fragment>

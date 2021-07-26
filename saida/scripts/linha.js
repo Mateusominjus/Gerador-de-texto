@@ -6,7 +6,9 @@ class Linha extends React.Component {
             { className: "Linha_da_tabela" },
             React.createElement(
                 "div",
-                { className: "row" },
+                { className: "row", onClick: () => {
+                        cria_objeto(this.props.linha[0]);
+                    } },
                 this.props.linha.map(texto => React.createElement(
                     "div",
                     { className: "col Linha" },
@@ -23,5 +25,6 @@ function definir_linhas(matriz) {
         null,
         matriz.map(linha => React.createElement(Linha, { linha: linha }))
     );
+
     ReactDOM.render(linhas, $("#linhas").get(0));
 }

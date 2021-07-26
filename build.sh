@@ -16,6 +16,9 @@ tipo="scripts"
 pasta="Paginas/Main"
 copila_babel "main.jsx"
 
+pasta="Paginas/Objeto"
+copila_babel "objeto.jsx"
+copila_babel "barra_inferior.jsx"
 
 
 
@@ -48,6 +51,9 @@ copia_arquivo "barra.css"
 
 pasta="Pesquisa"
 copia_arquivo "pesquisa.css"
+
+pasta="Paginas/Objeto"
+copia_arquivo "objeto.css"
 
 
 pasta="Tabela"
