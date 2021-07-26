@@ -2,7 +2,7 @@
 copila_babel(){
    local arquivo=$1
    local saida=${arquivo//jsx/js}
-   babel --presets react App/$pasta/$arquivo --out-file saida/$tipo/$saida
+  babel --presets /usr/local/lib/node_modules/babel-preset-react  App/$pasta/$arquivo --out-file saida/$tipo/$saida
 }
 
 copia_arquivo(){

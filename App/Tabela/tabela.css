@@ -1,6 +1,8 @@
-.tabela{
-    width: 500px;
+.Tabela{
+    width: 700px;
     height: 500px;
-    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
 }
 
