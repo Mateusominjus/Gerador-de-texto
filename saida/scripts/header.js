@@ -4,8 +4,8 @@ class Header extends React.Component {
                      "div",
                      { className: "row" },
                      this.props.cabecalho.map(titulo => React.createElement(
-                            "h5",
-                            { className: "col" },
+                            "div",
+                            { className: "col Cabecalho" },
                             titulo
                      ))
               );

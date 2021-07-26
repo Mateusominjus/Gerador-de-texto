@@ -8,7 +8,7 @@ main = () => {
       React.Fragment,
       null,
       React.createElement(Pesquisa, { texto: "Objeto" }),
-      React.createElement(Tabela, { cabecalho: ["Elemento1", "Elemento2", "Elemento3"] })
+      React.createElement(Tabela, { cabecalho: ["Nome", "Última modificação", "Autor"] })
    );
 
    ReactDOM.render(elemento, $("#root").get(0));

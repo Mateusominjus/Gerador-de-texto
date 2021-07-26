@@ -3,7 +3,7 @@ class Header extends React.Component {
             return <div className="row">
                    
                    {this.props.cabecalho.map(titulo=> (
-                   <h5 className="col">{titulo}</h5>
+                   <div className="col Cabecalho">{titulo}</div>
                    ))}  
             </div>
      }

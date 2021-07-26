@@ -1,8 +1,18 @@
 .Tabela{
-    width: 700px;
+    width: 800px;
     height: 500px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
+.Cabecalho{
+  
+   color: rgb(77, 77, 77);
+   font-size: 20px;
+   font-weight: 500;
+   font-style: inherit;
+   text-align: center;
+}
