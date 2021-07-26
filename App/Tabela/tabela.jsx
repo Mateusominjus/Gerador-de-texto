@@ -1,8 +1,8 @@
 class Tabela extends React.Component {
      render(){
        return  <div className="Tabela">
-             <Header></Header>
-      
+             <Header cabecalho={this.props.cabecalho}></Header>
+               
       </div>        
     }
 }

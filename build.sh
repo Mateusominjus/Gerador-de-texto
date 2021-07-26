@@ -21,6 +21,10 @@ pasta="Barra_superior"
 copila_babel  "barra.jsx"
 copila_babel  "usuario.jsx"
 
+pasta="Tabela"
+copila_babel "header.jsx"
+copila_babel "tabela.jsx"
+
 
 pasta="Paginas/Home"
 copila_babel "home.jsx"
@@ -29,18 +33,20 @@ pasta="Pesquisa/"
 copila_babel "pesquisa.jsx"
 
  cp App/index.html saida/index.html
-
+ cp App/import.js  saida/import.js
 #fazendo cópias
 tipo="estilo"
 pasta="Barra_superior"
 copia_arquivo "barra.css"
 
 
+
 pasta="Pesquisa"
 copia_arquivo "pesquisa.css"
 
 
-
+pasta="Tabela"
+copia_arquivo "tabela.css"
 
 
 

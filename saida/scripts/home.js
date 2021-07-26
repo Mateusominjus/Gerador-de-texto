@@ -1,6 +1,8 @@
-home = () => {
-    definir_paginas([{ nome: "Home" }]);
 
+
+home = () => {
+
+    definir_paginas([{ nome: "Home" }]);
     const elemento = React.createElement(
         React.Fragment,
         null,
