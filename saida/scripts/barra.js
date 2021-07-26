@@ -22,7 +22,7 @@ definir_paginas = paginas => {
       { "class": "row" },
       paginas.map(pagina => React.createElement(
          "div",
-         { "class": "col-2 elementos_da_barra", onClick: pagina.lambda, id: pagina.id },
+         { "class": "col-2 elementos_da_barra " + pagina.classe },
          pagina.nome
       ))
    );

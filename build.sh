@@ -17,6 +17,8 @@ pasta="Paginas/Main"
 copila_babel "main.jsx"
 
 
+
+
 pasta="Barra_superior"
 copila_babel  "barra.jsx"
 copila_babel  "usuario.jsx"
@@ -30,6 +32,7 @@ copila_babel "linha.jsx"
 
 pasta="Pesquisa/"
 copila_babel "pesquisa.jsx"
+copia_arquivo "escutadores_pesquisa.js"
 
 
 
@@ -49,7 +52,6 @@ copia_arquivo "pesquisa.css"
 
 pasta="Tabela"
 copia_arquivo "tabela.css"
-
 
 
 

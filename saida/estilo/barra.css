@@ -10,7 +10,7 @@
     font-style:initial;
     text-align: center;
 }
-.elementos_da_barra:hover ,#atual{
+.elementos_da_barra:hover ,.atual{
     color: rgb(255, 147, 46); 
 }
 #usuario{
