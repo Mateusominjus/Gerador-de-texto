@@ -16,7 +16,7 @@ definir_paginas =(paginas) =>{
    const id = "#meio-da-barra"
    const elem = <div class="row">
                     {paginas.map(pagina=> (
-                      <div class={"col-2 elementos_da_barra " + pagina.classe} >{pagina.nome}</div>
+                      <div class={"col-4 elementos_da_barra " + pagina.classe} >{pagina.nome}</div>
                      ))}
                </div>
   
