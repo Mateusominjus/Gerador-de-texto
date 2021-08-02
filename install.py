@@ -6,10 +6,10 @@ import os
 from shutil import copyfile
 
 def gera_caminho_de_entrada(dado):
-    return f'{ dado["caminho"]}\\{dado["arquivo"]}'
+    return f'{ dado["caminho"]}/{dado["arquivo"]}'
 
 def gera_caminho_de_saida(dado,tipo):
-    return f'saida\\{tipo}\\{dado["arquivo"]}'
+    return f'saida/{tipo}/{dado["arquivo"].replace("jsx","js")}'
 
 def retorna_tipo(caminho:str):
         estensoes = {
@@ -24,8 +24,8 @@ def retorna_tipo(caminho:str):
 
 def copila_babel(caminho_de_entrada,caminho_de_saida):
     nome_de_saida  = caminho_de_saida.replace('jsx','js')
-    comando = f'''babel --presets /usr/local/lib/node_modules/babel-preset-react 
-    {caminho_de_entrada} --out-file {caminho_de_saida}'''
+    comando = f'''babel --presets  /usr/local/lib/node_modules/babel-preset-react {caminho_de_entrada} --out-file {caminho_de_saida}'''
+    #print(caminho_de_saida)
     os.system(comando)
 
 def arquivos_do_app():
@@ -41,14 +41,18 @@ def main():
         tipo =  retorna_tipo(dado['arquivo'])
         caminho_de_entrada = gera_caminho_de_entrada(dado)
         caminho_de_saida = gera_caminho_de_saida(dado,tipo) 
-
+ 
+   
         if tipo == 'jsx':
+            #print(caminho_de_entrada)
             caminho_de_saida = gera_caminho_de_saida(dado,"scripts") 
+            print(caminho_de_saida)
             copila_babel(caminho_de_entrada,caminho_de_saida)
         else:
             copyfile(caminho_de_entrada, caminho_de_saida) 
-        
 
 main()
 
+
+#mnt/c/Users/mateus.queiroz/Documents/Lawtex_nova_picPay/prints/Contestacao2_atualizada
 
