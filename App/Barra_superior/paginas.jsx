@@ -3,9 +3,11 @@
 
 class Paginas extends React.Component {
     render(){
-        return  <div className="row">
+        return  <div className="col-9 row" >
                     {this.props.paginas.map(pagina=> (
-                      <div className={"col-4 elementos_da_barra"} >{pagina}</div>
+
+                      <a className="col-3 paginas "  href={pagina.link}>
+                                 {pagina.nome}</a>
                      ))}
              </div>
     }

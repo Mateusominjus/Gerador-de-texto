@@ -4,18 +4,18 @@
 
 
 function main(){
-   gerar_barra(usuario)
+   let paginas = [
+       {nome:"teste1",
+         link:"https://youtube.com.br"
+    }
+   ]
 
-   definir_paginas([{nome:"Home", classe:"atual"}])
-   const elemento = <React.Fragment>
-                         <Pesquisa texto="Objeto" id_botao="botao_pesquisa" id_input="input_pesquisa"></Pesquisa>
-                         <Tabela cabecalho={["Nome","Última modificação","Autor"]}></Tabela>
-                    </React.Fragment>
-   
-   ReactDOM.render( elemento, $("#root").get(0)) 
+   const elemento_main = <React.Fragment>
+       <Barra_Superior usuario={usuario} paginas={paginas}></Barra_Superior>
+   </React.Fragment>
 
-   definir_linhas(Objetos)
-   adiciona_escutador_de_filtragem(Objetos)
+   ReactDOM.render( elemento_main, $("#root").get(0)) 
+
 }       
 
 

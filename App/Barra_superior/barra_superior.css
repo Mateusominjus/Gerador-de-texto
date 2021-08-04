@@ -3,18 +3,18 @@
     background-color: rgb(182, 182, 182);
     
 }
-.elementos_da_barra{
+.paginas{
     color: rgb(71, 71, 71); 
     padding-top: 5px;
     font-size: 20px;
     font-style:initial;
     text-align: center;
+    text-decoration: none;
 }
-.elementos_da_barra:hover ,.atual{
+.paginas:hover ,.atual{
     color: rgb(250, 123, 3); 
 }
-#usuario{
-    margin-left: -20px;
 
-  
+#usuario{
+    margin-left: - 40px; 
 }

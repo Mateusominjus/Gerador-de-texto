@@ -13,6 +13,7 @@ def gera_caminho_de_saida(dado,tipo):
 
 def retorna_tipo(caminho:str):
         estensoes = {
+            '.map':'scripts',
             '.ts':'typescript',
             '.jsx':'jsx',
             '.js':'scripts',

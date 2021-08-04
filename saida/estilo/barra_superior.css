@@ -1,0 +1,20 @@
+
+#barra{
+    background-color: rgb(182, 182, 182);
+    
+}
+.paginas{
+    color: rgb(71, 71, 71); 
+    padding-top: 5px;
+    font-size: 20px;
+    font-style:initial;
+    text-align: center;
+    text-decoration: none;
+}
+.paginas:hover ,.atual{
+    color: rgb(250, 123, 3); 
+}
+
+#usuario{
+    margin-left: - 40px; 
+}

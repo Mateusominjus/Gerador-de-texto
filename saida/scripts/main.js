@@ -1,20 +1,17 @@
 
 
 function main() {
-   gerar_barra(usuario);
+    let paginas = [{ nome: "teste1",
+        link: "https://youtube.com.br"
+    }];
 
-   definir_paginas([{ nome: "Home", classe: "atual" }]);
-   const elemento = React.createElement(
-      React.Fragment,
-      null,
-      React.createElement(Pesquisa, { texto: "Objeto", id_botao: "botao_pesquisa", id_input: "input_pesquisa" }),
-      React.createElement(Tabela, { cabecalho: ["Nome", "Última modificação", "Autor"] })
-   );
+    const elemento_main = React.createElement(
+        React.Fragment,
+        null,
+        React.createElement(Barra_Superior, { usuario: usuario, paginas: paginas })
+    );
 
-   ReactDOM.render(elemento, $("#root").get(0));
-
-   definir_linhas(Objetos);
-   adiciona_escutador_de_filtragem(Objetos);
+    ReactDOM.render(elemento_main, $("#root").get(0));
 }
 
 main();
