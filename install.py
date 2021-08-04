@@ -14,7 +14,6 @@ def gera_caminho_de_saida(dado,tipo):
 def retorna_tipo(caminho:str):
         estensoes = {
             '.map':'scripts',
-            '.ts':'typescript',
             '.jsx':'jsx',
             '.js':'scripts',
             '.css':'estilo',
@@ -30,10 +29,6 @@ def copila_babel(caminho_de_entrada:str,caminho_de_saida:str):
     #print(caminho_de_saida)
     os.system(comando)
 
-def copila_typescript(caminho_de_entrada:str,caminho_de_saida:str):
-    nome_de_saida  = caminho_de_saida.replace('.ts','.js')
-    comando = f'tsc {caminho_de_entrada} -out {nome_de_saida}'
-    os.system(comando)
 
 
 def arquivos_do_app():
@@ -52,13 +47,8 @@ def main():
         caminho_de_entrada = gera_caminho_de_entrada(dado)
        
         
-        if tipo == 'typescript':
-         
-           caminho_de_saida = gera_caminho_de_saida(dado,"scripts") 
-           copila_typescript(caminho_de_entrada,caminho_de_saida)
- 
 
-        elif tipo == 'jsx':
+        if tipo == 'jsx':
             #print(caminho_de_entrada)
             caminho_de_saida = gera_caminho_de_saida(dado,"scripts") 
             copila_babel(caminho_de_entrada,caminho_de_saida)

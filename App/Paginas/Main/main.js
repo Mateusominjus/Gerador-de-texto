@@ -2,7 +2,6 @@
 
 
 function funcao(entrada) {
-
     alert("eai parsa você digitou" + entrada )
 }
 
